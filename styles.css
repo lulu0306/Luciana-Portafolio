@@ -1244,7 +1244,7 @@ section .cs-container .dot.two{
       display: flex;
     }
 
-    .mobile-container {
+    .hide-menu{
       display: none;
     }
 
@@ -1280,7 +1280,7 @@ section .cs-container .dot.two{
         flex-wrap: wrap;
     }
 
-    .mobile-container {
+    .hide-menu {
         display: none;
     }
 
@@ -1340,7 +1340,7 @@ section .cs-container .dot.two{
         position: relative;
     }
 
-    .mobile-container {
+    .hide-menu {
         display: none;
     }
 
