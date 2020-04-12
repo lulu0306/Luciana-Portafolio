@@ -11,13 +11,9 @@ html{
   color: #555;
   background-color: #f7f7f7;
 }
-
-ul{
-  list-style-type: none;
-}
-
-a{
-  color: #fff;
+body{
+    cursor: auto;
+    cursor: url(./img/l-icon.ico) 4 12, auto;
 }
 
 /*Footer*/
@@ -29,7 +25,7 @@ footer{
   background-color: #131622;
   color: #fff;
   text-align: center;
-  background: linear-gradient(to bottom ,  #60899a , #99ccff 100%)
+  background-color: cadetblue;
 }
 
 footer p{
@@ -38,21 +34,6 @@ footer p{
   color: rgba(255, 255, 255, .6);
   margin-bottom: 10px;
 }
-
-/* footer ul{
-  margin-bottom: 25px;
-  display: flex;
-  flex-direction: row;
-}
-
-footer ul li{
-  margin:  0 10px;
-}
-
-footer ul li a{
-  font-size: 36px;
-  cursor: pointer;
-} */
 
 /*Hero*/
 .hero{
@@ -259,11 +240,6 @@ footer ul li a{
     margin-bottom: 40px;
 }
 
-h1,h2,h3,h5,h6{
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-}
-
 @media only screen and (max-width: 575px){
     .hero ul li{
         text-transform: uppercase;
@@ -288,7 +264,40 @@ h1,h2,h3,h5,h6{
     }
 }
 
-/*About*/
+/*General Common styling*/
+a{
+  color: #fff;
+}
+
+h1,h2,h3,h5,h6{
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+
+.projects-container{
+  padding: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: aliceblue;
+}
+
+.articles-container,.tools-container,.contact-container, .about-container{
+  padding: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #fff;
+}
+
+h3.title{
+  color: #f7f7f7;
+  text-transform: capitalize;
+  font-size: 32px;
+  margin-bottom: 35px;
+  text-align: start;
+  text-shadow: -1px 0 cadetblue, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+/*Icons*/
 .fa-smile-beam{
     font-size: 25px;
     margin: 0 3px;
@@ -301,6 +310,54 @@ h1,h2,h3,h5,h6{
     color: #99ccff;
 }
 
+#about .peru-flag{
+    width: 40px;
+    height: 25px;
+    margin: 0 6px;
+}
+
+.fa-pencil-alt{
+    color:rgba(102, 204, 255, .7) ;
+}
+
+.fa-laptop-code{
+    color:rgba(102, 204, 255, .7) ;
+}
+
+.fa-code{
+    font-size: 20px;
+    color:cadetblue; ;
+    margin: 0 4px;
+}
+
+.fa-newspaper{
+    color:rgba(102, 204, 255, .7) ;
+   } 
+
+.fa-terminal{
+    color:rgba(102, 204, 255, .7) ;
+}
+
+  .fa-envelope{
+    color:rgba(102, 204, 255, .7) ;
+}
+
+.fa-phone{
+    color:rgba(102, 204, 255, .7) ;
+}
+
+.fa-linkedin{
+    color:rgba(102, 204, 255, .7) ;
+    font-size: 35px;
+}
+
+.fa-github{
+    font-size: 35px;
+    margin: 0 3px;
+    color: #f7f7f7;
+}
+
+/*About*/
 .w-link{
     font-size: 15px;
     color:#99ccff;
@@ -330,59 +387,40 @@ h1,h2,h3,h5,h6{
 
 }
 
-#about .peru-flag{
-    width: 40px;
-    height: 25px;
-    margin: 0 6px;
-}
-
-.fa-keyboard{
-    color:rgba(102, 204, 255, .7) ;
-}
-
-.fa-laptop-code{
-    color:rgba(102, 204, 255, .7) ;
-}
-
-.fa-code{
-    font-size: 20px;
-    color:cadetblue; ;
-    margin: 0 4px;
-}
-
-span.name{
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-@media only screen and (max-width: 575px){
-    .container{
-        max-width: 100%; 
-        padding-right: 3rem!important;
-        padding-left: 3rem!important;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    h3.title{
-        color: #131633;
-        text-transform: capitalize;
-        font-size: 32px;
-        margin-bottom: 35px;
-        text-align: start;
-    }
-
+/*About Common style*/
     #about{
         padding: 10px;
         margin-bottom: 20px;
+    }
+
+    span.name{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    .float-left{
+        float:left;
+       }
+
+       .main-image{
+        margin-right: 1.5em;
+        border-radius: 3px;
+        margin-bottom: 1em;
+       }
+
+       p.short-introduction{
+           margin-bottom: 0.8rem;
+       }
+       
+@media only screen and (max-width: 575px){
+    .about-container{
+        max-width: 100%; 
     }
 
     .main-image{
         width:100%;
         height: auto;
-        margin-right: 2em;
-        margin-bottom: 1em;
      }
 
      .float-left{
@@ -391,192 +429,68 @@ span.name{
 }
 
 @media only screen and (min-width: 576px){
-    .container{
+    .about-container{
         max-width: 540px; 
-        padding-right: 3rem!important;
-        padding-left: 3rem!important;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    h3.title{
-        color: #131633;
-        text-transform: capitalize;
-        font-size: 32px;
-        margin-bottom: 35px;
-        text-align: start;
-    }
-
-    #about{
-        padding: 10px;
-        margin-bottom: 20px;
     }
 
     .main-image{
         width:100%;
-        margin-right: 2em;
-        margin-bottom: 1em;
      }
-
-     .float-left{
-       float:left;
-    }
 }
 
-
 @media only screen and (min-width: 768px){
-    .container{
+    .about-container{
         max-width: 720px; 
-        padding-right: 3rem!important;
-        padding-left: 3rem!important;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    h3.title{
-        color: #131633;
-        text-transform: capitalize;
-        font-size: 32px;
-        margin-bottom: 35px;
-        text-align: start;
-    }
-
-    #about{
-        padding: 10px;
-        margin-bottom: 20px;
     }
 
     .main-image{
         width:40%;
-        margin-right: 2em;
-        margin-bottom: 1em;
    }
-
-   .float-left{
-    float:left;
-    }
 }
 
 @media only screen and (min-width: 992px){
-    .container{
+    .about-container{
         max-width: 960px; 
-        padding-right: 3rem!important;
-        padding-left: 3rem!important;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
-    h3.title{
-        color: #131633;
-        text-transform: capitalize;
-        font-size: 32px;
-        margin-bottom: 35px;
-        text-align: start;
-    }
-
-    #about{
-        padding: 10px;
-        margin-bottom: 20px;
     }
 
     .main-image{
         width:40%;
-        margin-right: 2em;
-        margin-bottom: 1em;
-    }
-
-    .float-left{
-        float:left;
     }
 }
 
 @media only screen and (min-width: 1200px){
-.container{
-    max-width: 1140px; 
-    padding-right: 3rem!important;
-    padding-left: 3rem!important;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-h3.title{
-    color: #131633;
-    text-transform: capitalize;
-    font-size: 32px;
-    margin-bottom: 35px;
-    text-align: start;
-}
-
-#about{
-    padding: 10px;
-    margin-bottom: 20px;
+.about-container{
+  max-width: 1140px; 
 }
 
 .main-image{
   width:27%;
-  margin-right: 2em;
-  margin-bottom: 1em;
-}
-
-.float-left{
-  float:left;
  }
 }
 
 /*projects*/
+
+/*projects common style*/
+a.more-projects{
+    color: #3399ff ;
+    text-decoration: none;
+}
+
+h3.card-text{
+    color: #e7d8d8 ;
+    text-shadow: 2px 2px #60899a;
+}
+
+
 @media only screen and (max-width: 575px){
     .projects-container{
         max-width: 100%; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: aliceblue;
-    }
-
-    h3.title{
-        color: #131633;
-        text-transform: capitalize;
-        font-size: 32px;
-        margin-bottom: 35px;
-        text-align: start;
-    }
-
-    a.more-projects{
-        color: #3399ff ;
-        text-decoration: none;
-    }
-
-    h3.card-text{
-        color: #e7d8d8 ;
-        text-shadow: 2px 2px #60899a;
     }
 }
 
 @media only screen and (min-width: 576px){
     .projects-container{
         max-width: 540px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: aliceblue;
-    }
-
-    h3.title{
-        color: #131633;
-        text-transform: capitalize;
-        font-size: 32px;
-        margin-bottom: 35px;
-        text-align: start;
-    }
-
-    a.more-projects{
-        color: #3399ff ;
-        text-decoration: none;
-    }
-
-    h3.card-text{
-        color: #e7d8d8 ;
-        text-shadow: 2px 2px #60899a;
     }
 }
 
@@ -584,28 +498,6 @@ h3.title{
 @media only screen and (min-width: 768px){
     .projects-container{
         max-width: 720px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: aliceblue;
-    }
-
-    h3.title{
-        color: #131633;
-        text-transform: capitalize;
-        font-size: 32px;
-        margin-bottom: 35px;
-        text-align: start;
-    }
-
-    a.more-projects{
-        color: #3399ff ;
-        text-decoration: none;
-    }
-
-    h3.card-text{
-        color: #e7d8d8 ;
-        text-shadow: 2px 2px #60899a;
     }
 }
 
@@ -613,28 +505,6 @@ h3.title{
 @media only screen and (min-width: 992px){
     .projects-container{
         max-width: 960px;
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: aliceblue;
-    }
-
-    h3.title{
-        color: #131633;
-        text-transform: capitalize;
-        font-size: 32px;
-        margin-bottom: 35px;
-        text-align: start;
-    }
-
-    a.more-projects{
-        color: #3399ff ;
-        text-decoration: none;
-    }
-
-    h3.card-text{
-        color: #e7d8d8 ;
-        text-shadow: 2px 2px #60899a;
     }
 }
 
@@ -642,137 +512,73 @@ h3.title{
 @media only screen and (min-width: 1200px){
     .projects-container{
         max-width: 1140px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: aliceblue;
-    }
-
-    h3.title{
-        color: #131633;
-        text-transform: capitalize;
-        font-size: 32px;
-        margin-bottom: 35px;
-        text-align: start;
-    }
-
-    a.more-projects{
-        color: #3399ff ;
-        text-decoration: none;
-    }
-
-    h3.card-text{
-        color: #e7d8d8 ;
-        text-shadow: 2px 2px #60899a;
     }
 }
 
 /*Articles*/
-.fa-newspaper{
-    color:rgba(102, 204, 255, .7) ;
-   } 
+
+/*Articles Common styles*/
+
+section h3.article-title{
+    color: #f7f7f7;
+    text-shadow: -1px 0 cadetblue, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+p.comming-soon{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    padding-bottom: 20px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px #000;
+    position: relative;
+}
+
+.meme{
+    width: 345px;
+    height: 269px;
+}
 
 @media only screen and (max-width: 575px){
     .articles-container{
         max-width: 100%; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    section h3.article-title{
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 15px;
     }
 
     p.comming-soon{
-        margin: 0;
-        padding: 0;
         font-size: 40px;
-        color: aliceblue;
-        letter-spacing: 5px;
-        text-shadow: 2px 2px #000;
-        position: relative;
     }
 }
 
 @media only screen and (min-width: 576px){
     .articles-container{
         max-width: 540px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color:#fff;
-    }
-
-    section h3.article-title{
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 15px;
     }
 
     p.comming-soon{
-        margin: 0;
-        padding: 0;
         font-size: 40px;
-        color: aliceblue;
-        letter-spacing: 5px;
-        text-shadow: 2px 2px #000;
-        position: relative;
     }
 }
 
 @media only screen and (min-width: 768px){
     .articles-container{
         max-width: 720px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    section h3.article-title{
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 15px;
     }
 
     p.comming-soon{
-        margin: 0;
-        padding: 0;
         font-size: 60px;
-        color: aliceblue;
-        letter-spacing: 5px;
-        text-shadow: 2px 2px #000;
-        position: relative;
     }
 }
 
 @media only screen and (min-width: 992px){
     .articles-container{
         max-width: 960px;
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    section h3.article-title{
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 15px;
     }
 
     p.comming-soon{
-        margin: 0;
-        padding: 0;
         font-size: 70px;
-        color: aliceblue;
-        letter-spacing: 5px;
-        text-shadow: 2px 2px #000;
-        position: relative;
     }
 }
 
@@ -780,34 +586,20 @@ h3.title{
     .articles-container{
         height: 500px;
         max-width: 1140px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff ;
     }
-
-    section h3.article-title{
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 15px;
-    }
-
 
     p.comming-soon{
-        margin: 0;
-        padding: 0;
         font-size: 70px;
-        color: aliceblue;
-        letter-spacing: 5px;
-        text-shadow: 2px 2px #000;
-        position: relative;
+
     }
 }
 
+/*Articles animation */
 section .cs-container{
     margin: 0;
     padding: 0;
     height: 100%;
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -838,126 +630,54 @@ section .cs-container .dot.two{
   }
 
 /*Tools*/
-  .fa-terminal{
-    color:rgba(102, 204, 255, .7) ;
-  }
+
+/*Tools Common style*/
+
+.tools-title{
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    text-align: start;
+}
+
+.rotator-text{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 5px;
+    position: relative;
+    padding: 20px 0;
+}
 
   @media only screen and (max-width: 575px){
     .tools-container{
         max-width: 100%; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    .tools-title{
-        font-size: 35px;
-        text-align: start;
-    }
-
-    .rotator-text{
-        text-align: center;
-        font-size: 20px;
-        letter-spacing: 5px;
-        position: relative;
-        padding: 20px 0;
     }
   }
 
   @media only screen and (min-width: 576px){
     .tools-container{
         max-width: 540px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    .tools-title{
-        font-size: 35px;
-        text-align: start;
-    }
-
-    .rotator-text{
-        text-align: center;
-        font-size: 20px;
-        letter-spacing: 5px;
-        position: relative;
-        padding: 20px 0;
     }
   }
 
   @media only screen and (min-width: 768px){
     .tools-container{
         max-width: 720px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    .tools-title{
-        font-size: 35px;
-        text-align: start;
-    }
-
-    .rotator-text{
-        text-align: center;
-        font-size: 20px;
-        letter-spacing: 5px;
-        position: relative;
-        padding: 20px 0;
     }
   }
 
   @media only screen and (min-width: 992px){
     .tools-container{
         max-width: 960px;
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    .tools-title{
-        font-size: 35px;
-        text-align: start;
-    }
-
-    .rotator-text{
-        text-align: center;
-        font-size: 20px;
-        letter-spacing: 5px;
-        position: relative;
-        padding: 20px 0;
     }
   }
 
   @media only screen and (min-width: 1200px){
     .tools-container{
         max-width: 1140px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
     }
-
-    section .tools-title{
-        font-size: 35px;
-        text-align: start;
-    }
-
-    .rotator-text{
-        text-align: center;
-        font-size: 30px;
-        letter-spacing: 5px;
-        position: relative;
-        padding: 20px 0;
-    }
-
   }
 
+  /*Tools Animation*/
   .rotator-text span:before{
     content: "Javascript";
     text-transform: uppercase;
@@ -988,120 +708,69 @@ section .cs-container .dot.two{
   }
 
 /*Contact*/
-.fa-envelope{
-    color:rgba(102, 204, 255, .7) ;
-}
 
-.fa-phone{
-    color:rgba(102, 204, 255, .7) ;
-}
-
-.fa-linkedin{
-    color:rgba(102, 204, 255, .7) ;
+/*Contact Common style*/
+section .contact-title{
+    color: #f7f7f7;
+    text-shadow: -1px 0 cadetblue, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 35px;
+    text-align: center;
+    padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 575px){
     .contact-container{
         max-width: 100%; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    section .contact-title{
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 15px;
     }
 }
 
 @media only screen and (min-width: 576px){
     .contact-container{
         max-width: 540px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    section .contact-title{
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 15px;
     }
 }
 
 @media only screen and (min-width: 768px){
     .contact-container{
         max-width: 720px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    section .contact-title{
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 15px;
     }
 }
 
 @media only screen and (min-width: 992px){
     .contact-container{
         max-width: 960px;
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    section .contact-title{
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 15px;
     }
 }
 
 @media only screen and (min-width: 1200px){
     .contact-container{
         max-width: 1140px; 
-        padding: 3rem;
-        margin-right: auto;
-        margin-left: auto;
-        background-color: #fff;
-    }
-
-    section .contact-title{
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 15px;
     }
 }
 
 /*Header*/
+
+/*Header Common style*/
+header a:hover{
+    opacity: 1;
+}
+
+header{
+    background-color: cadetblue;
+    opacity: 0.;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    padding: 35px 100px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 575px){
-    header{
-        background-color: rgba(102, 204, 255, .7);
-        opacity: 0.7;
-        position: fixed;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        width: 100%;
-        color: #fff;
-        padding: 35px 100px 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    header a:hover{
-        opacity: 1;
-    }
-
     .topnav a.icon {
         font-size: 35px;
         display: block;
@@ -1141,24 +810,6 @@ section .cs-container .dot.two{
 }
 
 @media only screen and (min-width: 576px){
-    header{
-        background-color: rgba(102, 204, 255, .7);
-        opacity: 0.7;
-        position: fixed;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        width: 100%;
-        color: #fff;
-        padding: 35px 100px 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    header a:hover{
-        opacity: 1;
-    }
 
     .topnav a.icon {
         font-size: 35px;
@@ -1199,25 +850,6 @@ section .cs-container .dot.two{
 }
 
 @media only screen and (min-width: 768px){
-    header{
-        background-color: rgba(102, 204, 255, .7);
-        opacity: 0.7;
-        position: fixed;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        width: 100%;
-        color: #fff;
-        padding: 35px 100px 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    header a:hover{
-        opacity: 1;
-    }
-
     header ul{
         margin: 0;
         padding: 0;
@@ -1254,25 +886,6 @@ section .cs-container .dot.two{
 }
 
 @media only screen and (min-width: 992px){
-    header{
-        background-color: rgba(102, 204, 255, .7);
-        opacity: 0.7;
-        position: fixed;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        width: 100%;
-        color: #fff;
-        padding: 35px 100px 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    header a:hover{
-        opacity: 1;
-    }
-
     header ul{
         margin: 0;
         padding: 0;
@@ -1306,25 +919,6 @@ section .cs-container .dot.two{
 }
 
 @media only screen and (min-width: 1200px){
-    header{
-        background-color: rgba(102, 204, 255, .7);
-        opacity: 0.7;
-        position: fixed;
-        z-index: 10;
-        top: 0;
-        left: 0;
-        width: 100%;
-        color: #fff;
-        padding: 35px 100px 20px;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    header a:hover{
-        opacity: 1;
-    }
-
     header ul{
         margin: 0;
         padding: 0;
@@ -1357,7 +951,7 @@ section .cs-container .dot.two{
     }
 }
 
-
+/*Header Animaton*/
 header ul li a:before{
     content: '';
     position: absolute;
@@ -1386,11 +980,10 @@ header ul li a:after{
     transform: scaleX(0);
     transition: all 0.5s;
     transform-origin: right;
+    cursor: url(./img/l-icon.ico)
 }
-
 
 header ul li a:hover{
     text-decoration: none;
     color: #f7f7f7;
 }
-
